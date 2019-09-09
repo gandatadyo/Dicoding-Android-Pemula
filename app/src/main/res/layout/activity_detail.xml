@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity" android:orientation="vertical">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:id="@+id/imgDetail"
+            tools:ignore="VectorDrawableCompat" android:contentDescription="TODO" android:layout_marginTop="20dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+        <TextView
+                android:text="Indomie Rasa Goreng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/lblNameProduct" android:textSize="24sp"
+                android:layout_marginTop="10dp" android:textStyle="bold"/>
+        <TextView
+                android:text="Rp. 50.000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/lblPriceProduct" android:layout_marginTop="5dp"
+                android:textSize="30sp" android:textColor="@color/colorPrimaryDark" android:textAlignment="textEnd"/>
+        <TextView
+                android:text="Unit : 100 Pcs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/lblQtyProduct" android:layout_marginTop="5dp"
+                android:textSize="14sp" android:textStyle="bold"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray">
+        </LinearLayout>
+        <TextView
+                android:text="Indomie rasa goreng enak renyah kriuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/lblDescriptionProduct" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</LinearLayout>
